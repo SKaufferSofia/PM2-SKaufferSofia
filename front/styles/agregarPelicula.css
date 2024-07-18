@@ -1,0 +1,28 @@
+p {
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  padding: 20px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.form-container {
+  width: 1000px;
+  margin-left: 200px;
+  background-color: rgba(0, 0, 0, 0.521);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.formulario {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-control {
+  width: 700px;
+}

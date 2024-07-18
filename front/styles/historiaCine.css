@@ -1,0 +1,171 @@
+p {
+  font-size: 17px;
+  color: white;
+  padding: 50px;
+}
+
+a:hover {
+  color: red;
+}
+
+.contenedor-movies {
+  width: 1300px;
+  margin-left: 100px;
+  display: flex;
+}
+.tarjeta {
+  color: white;
+  position: relative;
+  width: 320px;
+  height: auto;
+  margin: 10px;
+  padding: 7px;
+}
+
+.tarjeta:hover {
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 12px;
+}
+
+.imagen {
+  width: 100%;
+  height: auto;
+}
+
+.guiaUsuario {
+  color: white;
+  margin-top: 50px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.contenedor-info {
+  position: relative;
+  color: white;
+  border: 3px solid white;
+  width: 1070px;
+  height: 585px;
+  margin-left: 200px;
+  margin-top: 40px;
+  padding: 5px;
+  display: flex;
+}
+
+.imagen-info {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.puntuaciones {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 443px;
+  height: 100%;
+  background-color: rgba(54, 2, 2, 0.664);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.contenedor-info:hover .puntuaciones {
+  opacity: 1;
+}
+
+.info-general {
+  height: 400px;
+  margin-top: 80px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-pelicula {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.contenedor-streaming {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  position: relative;
+  margin: 25px;
+}
+
+.image {
+  width: 300px;
+  padding: 7px;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  transition: opacity 0.2s ease;
+}
+
+.image-hover {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 310px;
+  padding: 5px;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.image-container:hover .image {
+  opacity: 0;
+}
+
+.image-container:hover .image-hover {
+  opacity: 1;
+}
+
+.imagen-saga {
+  width: 100%;
+  height: auto;
+}
+
+.contenedor-saga {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Para permitir que las tarjetas se envuelvan a la siguiente línea */
+}
+
+.tarjeta-saga {
+  background-color: rgba(0, 0, 0, 0.651);
+  color: white;
+  width: 250px; /* Ajusta el ancho de las tarjetas según sea necesario */
+  height: 400px; /* Ajusta la altura de las tarjetas según sea necesario */
+  margin: 10px; /* Espacio entre tarjetas */
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.contenedor-saga .tarjeta-saga:nth-child(5n) {
+  background-color: rgba(0, 0, 0, 0.651);
+}

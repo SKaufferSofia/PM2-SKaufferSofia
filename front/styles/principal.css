@@ -1,0 +1,62 @@
+body {
+  background: linear-gradient(to bottom, #0d0e0f, #1b0202);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+header {
+  height: 70px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+.nav {
+  font-size: 18px;
+  padding: 20px;
+}
+
+.nav :hover {
+  color: red;
+  font-size: 19px;
+}
+
+.form-control {
+  width: 300px;
+}
+
+.input {
+  display: flex;
+  padding-left: 150px;
+}
+
+/* Efecto boton */
+
+.boton-margin {
+  text-align: center;
+  margin: 80px;
+}
+
+.btn {
+  background-color: #0d0e0f00;
+  color: rgb(255, 255, 255);
+  border-color: red;
+}
+
+.btn-danger:hover {
+  color: rgb(255, 255, 255);
+  background-color: red;
+  border-color: #0d0e0f;
+}
+
+.btn-danger:active {
+  background-color: red;
+}

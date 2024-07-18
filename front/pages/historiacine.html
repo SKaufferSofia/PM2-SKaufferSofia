@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Peliculas</title>
+  
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+      />
+      <link rel="stylesheet" href="../styles/resets.css" />
+  
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="../styles/principal.css" />
+      <link rel="stylesheet" href="../styles/historiaCine.css">
+      <link rel="stylesheet" href="../styles/font.css" />
+    </head>
+  <body class="poppins-regular">
+    <header>
+      <div>
+        <a href="../index.html"> <img src="../assets/Logo.png" alt="Logo" height="85px" /></a>
+      </div>
+      <nav>
+        <ul class="nav colorBlanco">
+          <li class="nav-item">
+            <a class="nav-link active colorBlanco" href="../index.html">Home</a>
+          </li>
+         <li class="nav-item"><a class="nav-link" href="./colecciones.html">Colecciones</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="./historiacine.html"
+              >Historias de Cine</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./webs.html">Webs Recomendadas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./agregarPelicula.html"
+              >Agregar Películas</a
+            >
+          </li>
+        </ul>
+      </nav>
+    
+    </header>
+
+    <main>
+
+      <p>El cine, como forma de arte y entretenimiento, ha producido obras que han dejado una huella indeleble en la cultura popular. 
+        Películas que exploran la condición humana, como el amor, la tragedia y la redención, 
+        han capturado la imaginación de audiencias en todo el mundo. Desde dramas épicos hasta comedias 
+        conmovedoras, el cine ha ofrecido una ventana a diferentes épocas, culturas y experiencias. 
+      </p>
+
+      
+      <div id="AllMovies"></div>
+  <div id="info-container">
+    
+    <div>
+      <p class="guiaUsuario">HAGA CLIC EN LA IMAGEN</p>
+    </div>
+  </div>
+  
+  <p>En esta sección encontrarás más películas, incluyendo emocionantes sagas como Star Wars y Marvel. 
+    Sumérgete en épicas aventuras galácticas, historias de superhéroes y mucho más.Nuestra colección está 
+    llena de clásicos y estrenos que te mantendrán al borde de tu asiento.</p>
+  
+
+       <div id="sagas" class="contenedor-streaming">
+        <div id="starWars" class="image-container">
+          <img
+            src="../assets/Sagas/Logos-SW.jpg"
+            alt="imagen principal"
+            class="image"
+          />
+            <img
+              src="../assets/Sagas/Logos-SW-Hover.jpg"
+              alt="imagen hover"
+              class="image-hover"
+            />
+        </div>
+
+        <div id="harryPotter" class="image-container">
+          <img
+            src="../assets/Sagas/Logos-HP.jpg"
+            alt="imagen principal"
+            class="image"
+          />
+            <img
+              src="../assets/Sagas/Logos-HP-Hover.jpg"
+              alt="imagen hover"
+              class="image-hover"
+            />
+        </div>
+
+        <div id="marvel" class="image-container">
+          <img
+            src="../assets/Sagas/Logos-marvel.jpg"
+            alt="imagen principal"
+            class="image"
+          />
+            <img
+              src="../assets/Sagas/Logos-marvel-Hover.jpg"
+              alt="imagen hover"
+              class="image-hover"
+            />
+        </div>
+
+        <div id="twilight" class="image-container">
+          <img
+            src="../assets/Sagas/Logos-TW.jpg"
+            alt="imagen principal"
+            class="image"
+          />
+            <img
+              src="../assets/Sagas/Logos-TW-Hover.jpg"
+              alt="imagen hover"
+              class="image-hover"
+            />
+        </div>
+      
+      </div>
+
+      
+    <div id="movies-saga" class="contenedor-saga">
+     
+      <div>
+        <p class="guiaUsuario">HAGA CLIC EN LA SAGA</p>
+      </div>
+      </div>
+    
+
+  <p> En la sección <a href="../pages/agregarPelicula.html"><b style="color: red">Agregar Película</b></a>  podrás añadir una película a tu gusto. Comparte con nosotros esas joyas del cine que te han dejado una impresión duradera y enriquece nuestra colección con tus recomendaciones personales.</p>
+
+  <div id="conteinerCards" class="formCards">
+    <p class="guiaUsuario"> <a href="../pages/agregarPelicula.html">AGREGAR DESDE EL FORMULARIO</a></p>
+  </div>
+
+  <p style="text-align: center;">Si queres ver la colección completa, puedes hacer clic en la sección de <a href="../pages/colecciones.html"><b style="color: red">Colecciones</b></a></p>
+
+    </main>
+
+
+      <div class="boton-margin">
+        <a href="../index.html">
+          <button class="btn btn-danger" type="submit">
+            Volver Inicio
+          </button>
+        </a>
+      </div>
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../public/bundleHistoriaCine.js"></script>
+    <script src="../public/bundleForm.js"></script>
+
+  </body>
+</html>
