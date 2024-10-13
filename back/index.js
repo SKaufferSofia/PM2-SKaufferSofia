@@ -6,6 +6,6 @@ dotenv.config();
 
 dbCon().then((res) => {
   app.listen(process.env.PORT, () => {
-    console.log("Servidor escuchando en el puerto 3000");
+    console.log("Servidor escuchando en el puerto " + process.env.PORT);
   }); // esto significa que esta adentro de nuestra pc
 });
