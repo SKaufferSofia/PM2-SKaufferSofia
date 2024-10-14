@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  min-width: 300px;
+  min-height: 100vh;
+  color: white;
+  background: linear-gradient(to bottom, #0d0e0f, #1b0202);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+p {
+  font-size: 17px;
+  color: white;
+  padding: 20px 50px;
+}
+
+.nav {
+  font-size: 18px;
+  padding: 20px;
+}
+.nav-link {
+  color: white;
+}
+
+.nav :hover {
+  color: red;
+  font-size: 19px;
+}
+
+.active-link {
+  color: rgb(255, 0, 0); /* Cambia a tu color preferido */
+  font-weight: bold; /* Opcional: para resaltar más */
+}
+
+.input {
+  display: flex;
+  width: 400px;
+  padding-left: 50px;
+}
+
+.form-control {
+  background-color: #0d0e0f;
+  color: white;
+  width: 150px;
+}

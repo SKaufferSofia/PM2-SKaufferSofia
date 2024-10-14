@@ -1,0 +1,76 @@
+.formCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.contenedorStreaming {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageContainer {
+  position: relative;
+  margin: 25px;
+}
+
+.image {
+  width: 300px;
+  padding: 7px;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  transition: opacity 0.2s ease;
+}
+
+.imageHover {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 310px;
+  padding: 5px;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.imageContainer:hover .image {
+  opacity: 0;
+}
+
+.imageContainer:hover .imageHover {
+  opacity: 3;
+}
+
+.imagenSaga {
+  width: 100%;
+  height: auto;
+}
+
+.contenedorSaga {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Para permitir que las tarjetas se envuelvan a la siguiente línea */
+}
+
+.tarjetaSaga {
+  background-color: rgba(0, 0, 0, 0.651);
+  color: white;
+  width: 250px; /* Ajusta el ancho de las tarjetas según sea necesario */
+  height: 400px; /* Ajusta la altura de las tarjetas según sea necesario */
+  margin: 10px; /* Espacio entre tarjetas */
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.contenedorSaga .tarjetaSaga:nth-child(5n) {
+  background-color: rgba(0, 0, 0, 0.651);
+}

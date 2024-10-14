@@ -1,0 +1,14 @@
+.container {
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  padding: 35px;
+}
+
+.colecciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
