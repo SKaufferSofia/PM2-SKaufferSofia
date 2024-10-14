@@ -28,11 +28,11 @@ const NavbarComp = () => {
               <Link to="/webs">Webs Recomendadas</Link>
             </Nav.Link>
           </Nav.Item>
-          <Nav.Item>
+          {/* <Nav.Item>
             <Nav.Link>
               <Link to="/agregarPelicula">Agregar Películas</Link>
             </Nav.Link>
-          </Nav.Item>
+          </Nav.Item> */}
         </Nav>
       </header>
     </div>

@@ -27,14 +27,14 @@ const Colecciones = () => {
           )}
         </div>
 
-        <Button
+        {/* <Button
           className="btn btn-danger"
           href="/agregarPelicula"
           size="md"
           style={{ marginTop: "40px" }}
         >
           Agregar pelicula
-        </Button>
+        </Button> */}
         <Button
           className="btn btn-danger"
           href="/home"

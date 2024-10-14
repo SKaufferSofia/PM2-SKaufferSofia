@@ -13,7 +13,7 @@ const HistoriaCine = () => {
       <div style={{ marginTop: "50px" }}>
         <SagaList movies={movies} />
       </div>
-      <p>
+      {/* <p>
         {" "}
         En la sección{" "}
         <a href="/agregarPelicula">
@@ -22,7 +22,7 @@ const HistoriaCine = () => {
         podrás añadir una película a tu gusto. Comparte con nosotros esas joyas
         del cine que te han dejado una impresión duradera y enriquece nuestra
         colección con tus recomendaciones personales.
-      </p>
+      </p> */}
     </div>
   );
 };
