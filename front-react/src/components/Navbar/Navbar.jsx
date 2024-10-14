@@ -10,7 +10,7 @@ const NavbarComp = () => {
         <Nav>
           <Nav.Item>
             <Nav.Link>
-              <Link to="/home">Home</Link>
+              <Link to="/">Home</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>

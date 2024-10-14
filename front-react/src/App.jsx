@@ -13,7 +13,7 @@ function App() {
     <div>
       {location.pathname !== "/colecciones" && <NavbarComp />}
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/colecciones" element={<Colecciones />} />
         <Route path="/historiacine" element={<HistoriaCine />} />
         <Route path="/webs" element={<WebRecomendadas />} />

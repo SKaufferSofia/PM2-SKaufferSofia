@@ -16,7 +16,7 @@ const NavbarColection = ({ onSearch }) => {
         <Nav>
           <Nav.Item>
             <Nav.Link>
-              <Link to="/home">Home</Link>
+              <Link to="/">Home</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
@@ -34,11 +34,11 @@ const NavbarColection = ({ onSearch }) => {
               <Link to="/webs">Webs Recomendadas</Link>
             </Nav.Link>
           </Nav.Item>
-          <Nav.Item>
+          {/* <Nav.Item>
             <Nav.Link>
               <Link to="/agregarPelicula">Agregar Películas</Link>
             </Nav.Link>
-          </Nav.Item>
+          </Nav.Item> */}
         </Nav>
         <InputGroup className="input">
           <input

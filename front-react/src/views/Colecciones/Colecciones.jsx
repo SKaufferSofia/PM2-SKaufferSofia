@@ -39,7 +39,7 @@ const Colecciones = () => {
           className="btn btn-danger"
           href="/home"
           size="md"
-          style={{ marginTop: "40px", marginLeft: "40px" }}
+          style={{ marginTop: "40px" }}
         >
           Volver a Inicio
         </Button>
