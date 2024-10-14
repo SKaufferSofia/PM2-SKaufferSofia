@@ -58,3 +58,19 @@ p {
   color: white;
   width: 150px;
 }
+
+.btn {
+  background-color: #0d0e0f00;
+  color: rgb(255, 255, 255);
+  border-color: red;
+}
+
+.btn-danger:hover {
+  color: rgb(255, 255, 255);
+  background-color: red;
+  border-color: #0d0e0f;
+}
+
+.btn-danger:active {
+  background-color: red;
+}

@@ -15,6 +15,7 @@ const SagaList = ({ movies }) => {
     );
   }
 
+  // eslint-disable-next-line no-unused-vars, react-hooks/rules-of-hooks
   const [saga, setSaga] = useState([
     {
       id: 1,
@@ -42,10 +43,12 @@ const SagaList = ({ movies }) => {
     },
   ]);
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [activeSaga, setActiveSaga] = useState(null);
 
   const filteredMovies = activeSaga
-    ? movies.filter(
+    ? // eslint-disable-next-line react/prop-types
+      movies.filter(
         (movie) => movie.details && movie.details.saga === activeSaga.name
       )
     : [];

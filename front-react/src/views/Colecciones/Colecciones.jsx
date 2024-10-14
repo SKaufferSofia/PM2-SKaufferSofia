@@ -2,7 +2,7 @@ import styles from "./Colecciones.module.css";
 import useMovies from "../../hook/hook";
 import AllMovieList from "../../components/AllMovies/AllMoviesList";
 import NavbarColection from "../../components/Navbar/NavbarColection";
-import { Spinner } from "react-bootstrap";
+import { Button, Spinner } from "react-bootstrap";
 
 const Colecciones = () => {
   const { filteredMovies, setSearchTerm } = useMovies();
@@ -26,6 +26,23 @@ const Colecciones = () => {
             <AllMovieList movies={filteredMovies} />
           )}
         </div>
+
+        <Button
+          className="btn btn-danger"
+          href="/agregarPelicula"
+          size="md"
+          style={{ marginTop: "40px" }}
+        >
+          Agregar pelicula
+        </Button>
+        <Button
+          className="btn btn-danger"
+          href="/home"
+          size="md"
+          style={{ marginTop: "40px", marginLeft: "40px" }}
+        >
+          Volver a Inicio
+        </Button>
       </div>
     </div>
   );

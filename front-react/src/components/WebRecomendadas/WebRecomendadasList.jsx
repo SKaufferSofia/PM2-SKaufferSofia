@@ -1,6 +1,16 @@
 import styles from "./webs.module.css";
 import { arrayWebs } from "./web";
+import { Spinner } from "react-bootstrap";
 const WebRecomendadasList = () => {
+  if (!arrayWebs) {
+    return (
+      <p className="text-center">
+        {" "}
+        <Spinner animation="border" className="text-danger" />
+      </p>
+    );
+  }
+
   return (
     <div className={styles.contenedorStreaming}>
       {arrayWebs.map((web) => (
