@@ -1,13 +1,13 @@
 import LogoNetflix from "./image/Logo-Netflix.png";
 import LogoNetflixHover from "./image/Logo-Netflix-Hover.png";
 import LogoPrimeVideo from "./image/Logo-Primevideo.png";
-import LogoPrimeVideoHover from "./image/Logo-Primevideo-Hover.png";
+import LogoPrimeVideoHover from "./image/Logo-Primevideo-hover.png";
 import LogoHBO from "./image/Logo-Max.png";
-import LogoHBOHover from "./image/Logo-Max-Hover.png";
+import LogoHBOHover from "./image/Logo-Max-hover.png";
 import LogoDisneyPlus from "./image/Logo-Disney.png";
-import LogoDisneyPlusHover from "./image/Logo-Disney-Hover.png";
+import LogoDisneyPlusHover from "./image/Logo-Disney-hover.png";
 import LogoStarPlus from "./image/Logo-Star+.png";
-import LogoStarPlusHover from "./image/Logo-Star+-Hover.png";
+import LogoStarPlusHover from "./image/Logo-Star+-hover.png";
 
 export const arrayWebs = [
   {
