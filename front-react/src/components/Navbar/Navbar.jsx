@@ -6,7 +6,9 @@ const NavbarComp = () => {
   return (
     <div>
       <header>
-        <img src={Logo} alt="Logo" className={{ height: "85px" }} />
+        <Link to="/">
+          <img src={Logo} alt="Logo" className={{ height: "85px" }} />
+        </Link>
         <Nav>
           <Nav.Item>
             <Nav.Link>
