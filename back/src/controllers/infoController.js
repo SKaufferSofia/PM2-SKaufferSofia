@@ -18,6 +18,7 @@ const createAllInfo = async (req, res) => {
     });
     res.status(201).json({
       message: "Información creada correctamente",
+      movie: { oscar, description, streaming, posterInfo, saga },
     });
   } catch (error) {
     return res.status(401).json({

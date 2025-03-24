@@ -2,13 +2,13 @@ const getMovies = document.getElementById("AllMovies");
 
 function infoCards(data) {
   let info = [
-    data[8],
-    data[9],
-    data[10],
-    data[11],
-    data[12],
     data[13],
-    data[14],
+    data[3],
+    data[5],
+    data[11],
+    data[19],
+    data[23],
+    data[16],
   ];
   const movies = document.createElement("div");
   movies.classList.add("contenedor-movies");

@@ -5,6 +5,11 @@ async function getMovies() {
   return movies;
 }
 
+async function getMovieName(movieName) {
+  const movie = await MoviesModels.findOne({ title: movieName }).populate("details");
+  return movie;
+}
+
 async function createMovie(movie) {
   const newMovie = MoviesModels.create(movie);
   return newMovie;
@@ -17,8 +22,21 @@ async function addDetail({ movieId, infoId }) {
   return movie;
 }
 
+async function updateMovie(movieId, movie) {
+  const updatedMovie = await MoviesModels.findByIdAndUpdate(movieId, movie);
+  return updatedMovie;
+}
+
+async function deleteMovieService(movieId) {
+  const movie = await MoviesModels.findByIdAndDelete(movieId);
+  return movie;
+}
+
 module.exports = {
   getMovies,
+  getMovieName,
   createMovie,
   addDetail,
+  updateMovie,
+  deleteMovieService,
 };
