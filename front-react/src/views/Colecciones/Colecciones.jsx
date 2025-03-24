@@ -2,7 +2,7 @@ import styles from "./Colecciones.module.css";
 import useMovies from "../../hook/hook";
 import AllMovieList from "../../components/AllMovies/AllMoviesList";
 import NavbarColection from "../../components/Navbar/NavbarColection";
-import { Button, Spinner } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 
 const Colecciones = () => {
   const { filteredMovies, setSearchTerm } = useMovies();
@@ -20,7 +20,7 @@ const Colecciones = () => {
           {filteredMovies.length === 0 ? (
             <p>
               {" "}
-              <Spinner animation="border" className="text-danger" />
+              No se encontraron películas que coincidan con la busqueda.
             </p>
           ) : (
             <AllMovieList movies={filteredMovies} />

@@ -1,12 +1,11 @@
 import axios from "axios";
 import { API_URL } from "./env";
 
-export const AllMovies = async function (setMovies) {
+export const AllMovies = async function () {
   try {
     const response = await axios.get(`${API_URL}/movies`);
     const moviesData = response.data;
-    setMovies(moviesData);
-    // setFilteredMovies(moviesData);
+    return moviesData;
   } catch (error) {
     console.error("Error index:", error);
   }

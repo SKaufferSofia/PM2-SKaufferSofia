@@ -5,6 +5,7 @@ import styles from "./historiaMovies.module.css";
 import { Spinner } from "react-bootstrap";
 
 const HistoriaCineList = ({ movies }) => {
+  const [activeMovie, setActiveMovie] = useState(movies[13]);
   if (!movies || movies.length < 18) {
     return (
       <p className="text-center">
@@ -14,17 +15,18 @@ const HistoriaCineList = ({ movies }) => {
     );
   }
 
-  const [activeMovie, setActiveMovie] = useState(movies[8]);
 
   const moviesArray = [
-    movies[8],
-    movies[9],
-    movies[10],
-    movies[11],
-    movies[12],
     movies[13],
-    movies[14],
+    movies[3],
+    movies[5],
+    movies[11],
+    movies[19],
+    movies[23],
+    movies[16],
   ];
+  console.log(moviesArray);
+  
 
   return (
     <div>
@@ -39,12 +41,12 @@ const HistoriaCineList = ({ movies }) => {
       <p style={{ textAlign: "center" }}>HAGA CLIC EN LA IMAGEN</p>
       <div className={styles.contenedorMovies}>
         {moviesArray.map((movie) => (
-          <div key={movie.id} onClick={() => setActiveMovie(movie)}>
+          <div key={movie.id} onClick={() => setActiveMovie(movie)} >
             <Historia movie={movie} />
           </div>
         ))}
       </div>
-      {activeMovie && <InfoHistoria movie={activeMovie} />}
+  {activeMovie && <InfoHistoria movie={activeMovie} />} 
     </div>
   );
 };

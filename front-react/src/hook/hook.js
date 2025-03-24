@@ -7,7 +7,13 @@ const useMovies = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    AllMovies(setMovies);
+    const fetchMovies = async () => {
+      const response = await AllMovies()
+
+      setMovies(response);
+    }
+
+    fetchMovies();
   }, []);
 
   useEffect(() => {

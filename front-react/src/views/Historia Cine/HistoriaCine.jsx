@@ -12,7 +12,7 @@ const HistoriaCine = () => {
       <HistoriaCineList movies={movies} />
       <div style={{ marginTop: "50px" }}>
         <SagaList movies={movies} />
-      </div>
+      </div> 
       {/* <p>
         {" "}
         En la sección{" "}

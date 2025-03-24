@@ -17,9 +17,9 @@ const MoviesListHome = ({ movies }) => {
     movies[0],
     movies[1],
     movies[2],
-    movies[15],
-    movies[16],
-    movies[17],
+    movies[20],
+    movies[21],
+    movies[22],
   ];
 
   return (
